@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --lightgrey: hsl(233, 8%, 79%);
+  --orange: hsl(35, 77%, 62%);
+  --lightred: hsl(5, 85%, 63%);
+  --darkgrey: hsl(236, 13%, 42%);
+  --verydarkgrey: hsl(240, 100%, 5%);
+}
+
+.header {
+  padding-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 25px;
+}
+
+.nav-links ul,
+li {
+  display: inline;
+  padding: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--lightgrey);
+}
+
+.nav-links a:hover {
+  color: var(--orange);
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.fa-bars {
+  padding-right: 50px;
+}
+/*
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+.main-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.main-body {
+  padding-top: 20px;
+}
+
+.main-body-img {
+  padding-left: 150px;
+}
+
+.main-body-img img {
+  max-width: 650px;
+  max-height: 350px;
+}
+
+.main-body-content {
+  padding-left: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-body-content-a {
+  width: 300px;
+  height: 150px;
+  font-size: 22px;
+  font-weight: bolder;
+  color: var(--verydarkgrey);
+}
+
+.main-body-content-b {
+  padding-top: 20px;
+  width: 330px;
+  height: 200px;
+  color: var(--darkgrey);
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 8px;
+}
+
+#read-further {
+  border: 1px solid var(--lightred);
+  background: var(--lightred);
+  color: white;
+  padding: 10px 20px;
+}
+
+#read-further:hover {
+  background: var(--verydarkgrey);
+  border: 1px solid var(--verydarkgrey);
+}
+
+/*New blog posts*/
+
+.side-news-feed {
+  margin-left: 40px;
+  display: block;
+  width: 320px;
+  line-height: 1.5;
+  background: var(--verydarkgrey);
+  padding: 20px;
+}
+
+.side-news-feed a {
+  text-decoration: none;
+  color: hsl(36, 100%, 99%);
+}
+
+.side-news-feed a:hover {
+  color: var(--orange);
+}
+
+.side-news-feed h1 {
+  color: var(--orange);
+}
+
+.side-news-feed p {
+  color: var(--darkgrey);
+}
+
+/*Articles footer*/
+
+.imp-articles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding-left: 12px;
+}
+
+.blog-profile-img img {
+  width: 90px;
+  height: 100px;
+}
+
+.blog1,
+.blog2,
+.blog3 {
+  display: inline-flex;
+}
+
+.blog-profile-content {
+  padding-left: 15px;
+  line-height: 1.5;
+}
+
+.blog-profile-content a {
+  text-decoration: none;
+  color: var(--verydarkgrey);
+  font-weight: 700;
+}
+
+.blog-profile-content a:hover {
+  color: var(--lightred);
+}
+
+.blog-contents {
+  color: var(--lightgrey);
+}
+
+@media screen and (min-width: 340px) and (max-width: 840px) {
+  html {
+    font-size: 1.2rem;
+  }
+  /*
+  .hamburger-menu {
+    display: inline-flex;
+  }
+  .nav-links ul,
+  li {
+    display: block;
+  }*/
+  .main-body,
+  .main-body-content,
+  .imp-articles {
+    flex-direction: column;
+  }
+
+  .main-body-img img {
+    max-width: 300px;
+    max-height: 370px;
+  }
+
+  .main-body-img {
+    padding-left: 140px;
+  }
+
+  .blog1,
+  .blog2,
+  .blog3 {
+    padding-top: 20px;
+  }
+
+  .side-news-feed {
+    width: 270px;
+    padding-right: 120px;
+  }
+
+  .main-body-content {
+    justify-content: center;
+    align-items: center;
+  }
+  .main-body-content-a {
+    padding-right: 230px;
+    width: 250px;
+    height: 150px;
+  }
+
+  .main-body-content-b {
+    padding-right: 190px;
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 260px) and (max-width: 750px) {
+  .main-body,
+  .main-body-content,
+  .imp-articles {
+    flex-direction: column;
+  }
+
+  .main-body-content-a {
+    padding-top: 20px;
+    padding-right: 110px;
+  }
+
+  .main-body-content-b {
+    padding-right: 150px;
+    width: 250px;
+  }
+
+  .main-body-img {
+    margin-left: 10px;
+  }
+
+  .main-body-img img {
+    max-width: 250px;
+    max-height: 350px;
+  }
+
+  .side-news-feed {
+    display: block;
+    width: 260px;
+    padding: 40px;
+  }
+}
